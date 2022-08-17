@@ -1,0 +1,10 @@
+\documentclass[12pt]{book}
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+\usepackage{xepersian}
+\settextfont{Yas}
+\title{سخنرانی های دکتر توسرکانی}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
