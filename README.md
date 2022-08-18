@@ -22,6 +22,15 @@ Some pretraining on simulated data has been conducted to enhance the results. Th
 
 The use of a pressure sensor was suggested as a possible solution to this problem, but it wasn't put to the test because of time constraints.
 
+<div align="center">
+
+|  | Input Image | Output Image |
+| :---         |     :---:      |          ---: |
+| Simulated Data   | <img src="https://user-images.githubusercontent.com/53098142/185436057-86b22cfe-35b6-409b-a1e0-8822065ca788.png" alt="52 input" width="200"/>     | <img src="https://user-images.githubusercontent.com/53098142/185436044-4f697037-8783-4cc3-8c31-4eed0a4f9bb6.png" alt="52 output" width="200"/>   |
+| Real Data     | <img src="https://user-images.githubusercontent.com/53098142/185436048-8c811bba-5c8f-4e58-a25d-5f6ff25b65fe.png" alt="245 input" width="200"/>       | <img src="https://user-images.githubusercontent.com/53098142/185436051-25ad575e-c0bb-429f-b876-8bf284f607c0.png" alt="245 output" width="200"/>     |
+
+</div>
+
 
 ## Master Thesis
 
