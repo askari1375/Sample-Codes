@@ -63,7 +63,7 @@ Several deep-learning techniques were tested in this project, and some of them w
 
 | Sample Input Image | Sample Cell Detection Result |
 |     :---:      |          :---: |
-| <img src="https://user-images.githubusercontent.com/53098142/185441050-24c06613-2d2b-4fc8-a25b-59bdbe3a807e.jpg" alt="Im006_1" height="300"/>     | <img src="https://user-images.githubusercontent.com/53098142/185441792-0155359f-ff5a-43f5-9dc9-c82cdf59afb5.jpg" alt="Im012_1" height="300"/>   |
+| <img src="https://user-images.githubusercontent.com/53098142/185441050-24c06613-2d2b-4fc8-a25b-59bdbe3a807e.jpg" alt="Im006_1" height="200"/>     | <img src="https://user-images.githubusercontent.com/53098142/185441792-0155359f-ff5a-43f5-9dc9-c82cdf59afb5.jpg" alt="Im012_1" height="200"/>   |
 
 </div>
 
