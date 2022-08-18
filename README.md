@@ -69,7 +69,7 @@ Several deep-learning techniques were tested in this project, and some of them w
 
 
 
-## Crawler
+## Web Crawler
 
 Python code that can crawl [this](https://searchingfortruth.ir/) website was written for this project. This code's objective is to create a Latex file from articles on this website. Running this code will produce a ".tex" file that can be used by a Latex compiler. To achieve this, the following tasks had been completed:
 
