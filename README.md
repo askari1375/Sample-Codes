@@ -2,7 +2,16 @@
 
 ## CREATE Lab
 
+I participate as an intern for two months in [CREATE Lab](https://www.epfl.ch/labs/create/) at **EPFL** under the supervision of [Prof. Josie Hughes](https://people.epfl.ch/josie.hughes?lang=en).
+
 ### Glove
+
+The lab members created a special glove with multiple sensors. these sensors measure some electric resistance between the point that they were connected and a certain source. The measured parameters changed when the shape of the glove changed because of the glove's electric characteristics. This project's goal was to use sensor data to recreate hand positions. A machine-learning strategy was chosen to solve this issue.
+
+For this problem, labeled data, sensor data for input, and hand position for output are required while training a machine learning method. So, it is important to determine hand position. The [Mediapipe](https://google.github.io/mediapipe/solutions/hands.html) python package was used to extract hand key points from the camera-captured image to determine the hand position.
+
+Several machine learning techniques, including deep neural networks, were examined for model development. Those models didn't yield accurate results since the glove data was noisy and of low quality.
+
 
 
 ### Trunk
