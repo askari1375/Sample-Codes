@@ -2,16 +2,13 @@
 
 ## CREATE Lab
 
-I participate as an intern for two months in [CREATE Lab](https://www.epfl.ch/labs/create/) at **EPFL** under the supervision of [Prof. Josie Hughes](https://people.epfl.ch/josie.hughes?lang=en).
+I had the opportunity to be an intern at EPFL's [CREATE Lab](https://www.epfl.ch/labs/create/) for two months, under the expert guidance of [Prof. Josie Hughes](https://people.epfl.ch/josie.hughes?lang=en).
 
-### Glove
+### Project 1: Sensor Glove
+At the lab, a distinctive glove embedded with multiple sensors was developed by the members. These electric-based sensors measured the electric resistance from a predetermined point to a source. The measured parameters changed as a result of changes in the glove's shape caused by its electric properties. Our goal was to use the sensor data to reconstruct the hand position. To achieve this, we decided on a machine-learning strategy.
 
-The lab members created a special glove with multiple sensors. these sensors measure some electric resistance between the point that they were connected and a certain source. The measured parameters changed when the shape of the glove changed because of the glove's electric characteristics. This project's goal was to use sensor data to recreate hand positions. A machine-learning strategy was chosen to solve this issue.
-
-For this problem, labeled data, sensor data for input, and hand position for output are required while training a machine learning method. So, it is important to determine hand position. The [Mediapipe](https://google.github.io/mediapipe/solutions/hands.html) python package was used to extract hand key points from the camera-captured image to determine the hand position.
-
-Several machine learning techniques, including deep neural networks, were examined for model development. Those models didn't yield accurate results since the glove data was noisy and of low quality.
-
+#### Data Preparation:
+The crucial task was gathering precise data. It was easy to gather sensor data for different hand positions, but connecting this data to the hand position was challenging. My solution was to synchronise the video capturing the hand movement with sensor data recording, then determine the hand position by analysing the frames. For this, I employed Google’s open-source [Mediapipe](https://developers.google.com/mediapipe/solutions/vision/hand_landmarker) Python package, extracting 3D coordinates of the key hand points from the frames.
 
 <div align="center">
 
@@ -22,15 +19,13 @@ Several machine learning techniques, including deep neural networks, were examin
 </div>
 
 
+#### Model Development:
+Multiple machine learning models were explored, including deep neural networks and several classical methods. However, since the input data from the sensors was noisy and didn’t have clear information, getting accurate results was challenging, and a scientific paper could not materialise from this effort.
+### Project 2: Silicon-Casted Trunk
+This project was an experiment in soft robotics with the goal of coming up with a way to identify the shape of the silicon-casted trunk. Initially, a camera was placed inside the trunk, and a machine-learning method was to be created to determine the shape of the trunk from the images that were captured.
 
-
-### Trunk
-
-This project was in the field of soft robotics. The project's goal was to discover a suitable solution to the issue of determining the shape of the trunk at each instant for a silicon-cast trunk. The initial suggestion was to use a camera to keep an eye on the trunk. The absence of labeled data for this topic posed a significant challenge, so another camera was employed to collect the trunk's position from outside of that.
-
-Some pretraining on simulated data has been conducted to enhance the results. The network's architecture resembled that of auto-encoders, which take an image as input and output. Due to occlusions, there was no information on the end section of the trunk in the acquired image. As expected, the model was unable to predict the position of the end part very well. However, this network was able to predict the position of the initial part of the trunk very well.
-
-The use of a pressure sensor was suggested as a possible solution to this problem, but it wasn't put to the test because of time constraints.
+#### Strategy and Model Training:
+The lack of training data I faced could be overcome by adding an extra external camera. We were able to collect enough image pairs as a result to this setup to provide major training data. I divided the task into two phases to start the problem-solving process. In the first stage, a model was created that could anticipate the second camera's image based on the information from the first. The second stage involved analysing the predicted image to extract the relevant features of the trunk. Before deploying the actual dataset, the model was pre-trained on simulated pairs to improve performance. An auto-encoder architecture was chosen due to the nature of the task.
 
 <div align="center">
 
@@ -40,6 +35,12 @@ The use of a pressure sensor was suggested as a possible solution to this proble
 | Real Data     | <img src="https://user-images.githubusercontent.com/53098142/185436048-8c811bba-5c8f-4e58-a25d-5f6ff25b65fe.png" alt="245 input" width="200"/>       | <img src="https://user-images.githubusercontent.com/53098142/185436051-25ad575e-c0bb-429f-b876-8bf284f607c0.png" alt="245 output" width="200"/>     |
 
 </div>
+
+#### Overcoming Challenges:
+The first camera experienced occlusions, obscuring the view of the trunk's last part. Despite this, the model successfully predicted the initial part of the trunk. To counter the occlusion issue, we thought about including a pressure sensor beside the camera to aid decision-making. However, due to time limitations, this solution was not implemented.
+### Conclusion:
+My time at the CREATE Lab was full of learning, exploring, and solving problems in soft robotics and using machine learning. Even though we had some roadblocks, like time limits and not enough data, I learned so much. This experience has given me a strong starting point for more work in the application of artificial intelligence in robotics in the future.
+
 
 
 ## Master Thesis
