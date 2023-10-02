@@ -49,7 +49,7 @@ My Master's thesis involved developing a model to diagnose Acute Lymphoblastic L
 
 ### Problem Definition and Challenges:
 
-In medical diagnostics, having limited training data is a common hurdle. This project also faced such constraints, necessitating strategies at every stage to counter the limited dataset sizes. The reliability of the model is paramount, with a focus on ensuring the model makes meaningful and accurate decisions. The necessity arose from the observation that high diagnostic accuracy alone could lead to models taking shortcuts due to the small size of medical training datasets.
+A common challenge in medical diagnostics is the lack of training data. These limitations also applied to this project, requiring strategies to overcome the constrained dataset sizes at each stage. The model's reliability is crucial, with a focus on making sure the model generates decisions that are accurate and meaningful. The necessity arose from the observation that high diagnostic accuracy alone could lead to models taking shortcuts due to the small size of medical training datasets.
 
 ### Solution and Methodology:
 
@@ -70,8 +70,8 @@ A multitude of deep-learning techniques were employed and tested during this pro
 1. Object detection with Faster RCNN
 2. Segmentation with U-Net
 3. LSTM models
-4. Self-Supervised Learning
-5. Vision transformers
+4. Vision transformers
+5. Self-Supervised Learning
 
 ### Results and Evaluation:
 
@@ -91,33 +91,6 @@ This project not only advanced the field of medical diagnostics with its novel a
 
 
 
-
-
-
-## Master Thesis
-
-Medical data processing for disease diagnosis is one of the uses of machine learning and artificial intelligence. In this study, blood cell images, a sort of histopathology imaging, were the main emphasis, and the model was designed to be able to identify a specific type of blood cancer called acute lymphoblastic leukemia (ALL) from those photos.
-
-Lack of training data and short dataset sizes are common issues that frequently arise in medical settings. This project was not an exception, and this restriction was taken into account at every turn. The appropriate strategy was used at each stage to overcome this obstacle.
-
-In medical cases, the model's reliability is also critical. In this study, a novel pipeline was created that can make decisions using relevant biomarkers and do so with high accuracy. The study that will be published soon will provide further information.
-
-Several deep-learning techniques were tested in this project, and some of them were used. Here are a few of them as an illustration:
-
-1. object detection with Faster RCNN
-2. Segmentation with U-Net
-3. LSTM models
-4. Self-Supervised Learning
-5. Vision transformers
-
-
-<div align="center">
-
-| Sample Input Image | Sample Cell Detection Result |
-|     :---:      |          :---: |
-| <img src="https://user-images.githubusercontent.com/53098142/185441050-24c06613-2d2b-4fc8-a25b-59bdbe3a807e.jpg" alt="Im006_1" height="200"/>     | <img src="https://user-images.githubusercontent.com/53098142/185441792-0155359f-ff5a-43f5-9dc9-c82cdf59afb5.jpg" alt="Im012_1" height="200"/>   |
-
-</div>
 
 
 
