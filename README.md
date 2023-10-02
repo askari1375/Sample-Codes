@@ -43,6 +43,57 @@ My time at the CREATE Lab was full of learning, exploring, and solving problems 
 
 
 
+## Master Thesis: Acute Lymphoblastic Leukemia Diagnosis
+
+My Master's thesis involved developing a model to diagnose Acute Lymphoblastic Leukemia (ALL), a prevalent childhood blood cancer, from blood smear images. Early diagnosis is crucial to initiate timely treatment, saving patients’ lives, hence the significance of this project. The task was to enable the model to mirror hematologists' diagnostic process, examining blood smear images, a task traditionally performed by expert doctors.
+
+### Problem Definition and Challenges:
+
+In medical diagnostics, having limited training data is a common hurdle. This project also faced such constraints, necessitating strategies at every stage to counter the limited dataset sizes. The reliability of the model is paramount, with a focus on ensuring the model makes meaningful and accurate decisions. The necessity arose from the observation that high diagnostic accuracy alone could lead to models taking shortcuts due to the small size of medical training datasets.
+
+### Solution and Methodology:
+
+I introduced a novel pipeline that mimics the process used by hematologists, constraining the model to follow a pipeline inspired by experts' work and redefining the problem as a multiple-instance learning problem. This was pivotal to achieving practical and reliable results, as judgments based on only one image proved insufficient. The figure below illustrates the final architecture used for this project.
+
+<div align="center">
+  
+| Final Architecture of the Model |
+| :---: |
+| <img src="https://github.com/askari1375/Sample-Codes/assets/53098142/d463370a-419d-4e4e-b325-fcf78a854019" alt="Architecture of Model" width="600"/> |
+  
+</div>
+
+
+
+
+A multitude of deep-learning techniques were employed and tested during this project, such as:
+1. Object detection with Faster RCNN
+2. Segmentation with U-Net
+3. LSTM models
+4. Self-Supervised Learning
+5. Vision transformers
+
+### Results and Evaluation:
+
+The model achieved an accuracy of 96.15%, an F1-score of 94.24%, a sensitivity of 97.56%, and a specificity of 90.91% on ALL IDB 1. It demonstrated resilience and acceptable performance even on an out-of-distribution dataset, serving as a challenging test. The results are documented in detail in my paper available on [Arxiv](https://arxiv.org/abs/2307.04014).
+
+<div align="center">
+
+| Sample Input Image | Sample Cell Detection Result |
+|     :---:      |          :---: |
+| <img src="https://user-images.githubusercontent.com/53098142/185441050-24c06613-2d2b-4fc8-a25b-59bdbe3a807e.jpg" alt="Im006_1" height="200"/>     | <img src="https://user-images.githubusercontent.com/53098142/185441792-0155359f-ff5a-43f5-9dc9-c82cdf59afb5.jpg" alt="Im012_1" height="200"/>   |
+
+</div>
+
+### Conclusion:
+
+This project not only advanced the field of medical diagnostics with its novel approach and methodological advancements but also underscored the potential of employing advanced machine learning models in critical healthcare domains, even with limited data availability. It set a precedent for employing a multiple-instance learning setup to solve intricate medical diagnosis problems, emphasizing meaningful decision-making processes aligned with expert practices.
+
+
+
+
+
+
 ## Master Thesis
 
 Medical data processing for disease diagnosis is one of the uses of machine learning and artificial intelligence. In this study, blood cell images, a sort of histopathology imaging, were the main emphasis, and the model was designed to be able to identify a specific type of blood cancer called acute lymphoblastic leukemia (ALL) from those photos.
